@@ -1,0 +1,67 @@
+public class Loader {
+    public static void main(String[] args) {
+        int milkAmount = 200; // ml
+        int powderAmount = 5; // g
+        int eggsCount = 3; // items
+        int sugarAmount = 5; // g
+        int oilAmount = 30; // ml
+        int appleCount = 8;
+        boolean bludo1 = false;
+        boolean bludo2 = false;
+        boolean bludo3 = false;
+        //powder - 400 g, sugar - 10 g, milk - 1 l, oil - 30 ml
+        if (milkAmount >= 1000 && sugarAmount >= 10 && powderAmount >= 400 && oilAmount >=30)
+        {
+            boolean bludo1 = true;
+        }
+
+        else
+        {
+            boolean bludo1 = false;
+        }
+
+
+        //milk - 300 ml, powder - 5 g, eggs - 5
+         if (milkAmount >= 300 && powderAmount >= 5 && eggsCount >= 5)
+         {
+             boolean bludo2 = true;
+         }
+                else
+         {
+             boolean bludo2 = false;
+         }
+        //apples - 3, milk - 100 ml, powder - 300 g, eggs - 4
+        if (appleCount >= 3 && milkAmount >=100 && powderAmount >= 300 && eggsCount >= 4)
+        {
+            boolean bludo3 = true;
+        }
+        else
+        {
+            boolean bludo3 = false;
+        }
+        if (bludo1 == true)
+        {
+            System.out.println("Pancakes");
+        }
+        else
+        {
+            System.out.println("No pancakes");
+        }
+        if (bludo2 == true)
+        {
+            System.out.println("Omelette");
+        }
+        else
+        {
+            System.out.println("No omelette");
+        }
+        if (bludo3 == true)
+        {
+            System.out.println("Apple pie");
+        }
+        else
+        {
+            System.out.println("No apple pie");
+        }
+    }
+}
